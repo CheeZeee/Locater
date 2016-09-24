@@ -1,0 +1,82 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Banwill Cuisine
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p 125 Herbert Macaulay Way, Yaba, Lagos
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening Hours
+            .panel-body
+              p Monday - Friday : 7:00am - 7:00pm
+              p Saturday : 8:00am - 9:00pm
+              p Sunday : Closed
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title What We Offer
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Cool Drinks
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Hot Food
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp; Wifi
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location Map
+            .panel-body
+              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=500x347&sensor=false&markers=51.455041,-0.9690884&scale=2')
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new') Add Review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Gabriel Ajagun
+                    small.reviewTimestamp 16 July 2016
+                  .col-xs-12
+                    p What a great place. I can't say enough good things
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Charles Olusegun
+                    small.reviewTimestamp 16 June 2016
+                  .col-xs-12
+                    p It was not bad. Rice wasn't so great, but the wifi was excellent
+    .col-xs-12.col-md-3
+     p.lead Banwill Cuisine is on Loc8r because it has accessible wifi and a fun place to sit and relax while enjoying a nice meal.
+     p If you've been here and you liked the experience please feel free to share the good news by adding a review to help others just like you.

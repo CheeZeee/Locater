@@ -1,14 +1,14 @@
-/* Get HOME page */
+/* Get HOME or Locations-list page */
 module.exports.homelist = function(req, res){
   res.render('locations-list', {title: 'Home'});
 };
 
 /* Get Location-Info page */
 module.exports.locationInfo = function(req, res) {
-  res.render('index', {title: 'Location Info'});
+  res.render('location-info', {title: 'Location Info'});
 };
 
 /*  Get Add-Review page */
 module.exports.addReview = function(req, res) {
-  res.render('index', {title: 'Add Review'});
+  res.render('location-review-form', {title: 'Add Review'});
 };
